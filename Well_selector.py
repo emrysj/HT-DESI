@@ -302,6 +302,7 @@ class WellPlateApp(QWidget):
             self.current_well_coords.append((x, y))
 
         self.current_coord_index = 0
+        ContactCarm(200)
         self.start_times[f"{chr(65 + well.row)}{well.col + 1}"] = time.time() - self.run_start_time 
 
         # This will take stage to wait for 0.5 seconds 1mm away from start of the well. 

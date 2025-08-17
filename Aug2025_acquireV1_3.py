@@ -14,7 +14,7 @@ import csv
 import WatersIMGReader as wat 
 from ctypes import *
 import numpy as np
-reader = cdll.LoadLibrary("C:/Users/Emrys/watersimgreader.dll") # This will need to change 
+reader = cdll.LoadLibrary("C:/HDI/lib/watersimgreader.dll") # Need to put these files during install
 mainPath='C:/HDI/lib/'
 from time import sleep
 
@@ -1643,4 +1643,5 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     ex = WellPlateApp()
     ex.show()
+
     sys.exit(app.exec())
